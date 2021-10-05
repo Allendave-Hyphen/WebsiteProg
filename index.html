@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image" href="images/Access.jpeg">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="about.html">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title></title>
+</head>
+<style> 
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+
+}
+col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+
+
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5;
+}
+.btn:hover{
+    background: #563434;
+}
+.header{
+    background: radial-gradient(#fff, #ffd6d6);
+}
+.header .row{
+    margin-top:70px;
+
+}
+.categories{
+    margin-top: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+.offer{
+    background: radial-gradient(#fff, #ffd6d6, #fff);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.col-2 .offer-img{
+    padding: 50px;
+}
+small{
+    color: #555;
+}
+.testimonial{
+    padding-top: 100px;
+
+}
+.testimonial col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5;
+}
+.testimonial col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial col-3:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-qoute-left{
+    font-size: 34px;
+    color: #ff523d;
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+.brands{
+    margin: 100px auto;
+
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100px;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+</style>
+<body>
+
+    <div class="header">
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/banner.png" width="125px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Register-Access/index.html">Contact Us</a></li>
+                <li><a href="Website2/index.html">Products</a></li>
+                <li><a href="Portfolio/Index.html">Accounts</a></li>
+            </ul>
+        </nav>
+        <img src="images/cart.png" width="30px" height="30px">
+        
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>Give me A review and take <br>A look New Style! </h1>
+            <p>
+                Success isn't always about greatness. <br>It's about how 
+                you work with the Economics  Strategies.
+            </p>
+            <a href="OnlineShop/index.html" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col-2">
+            <img src="images/image1.png">
+
+        </div>
+    </div>
+</div>
+
+    <div class="categories">
+        <div class="smal-container">
+           <div class="row">
+             <div class="col-3">
+                <img src="images/category-1.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/category-2.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/category-3.jpg">
+            </div>
+         </div>
+        </div>
+    </div>
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.jpg">
+                <h4>New XY T-shirt</h4>
+                <div class="rating">
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star-half' type='solid' ></box-icon>
+                </div>
+                <p>$100.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg">
+                <h4>HRX Shoe panthum</h4>
+                <div class="rating">
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star-half' type='solid' ></box-icon>
+                </div>
+
+                <p>$300.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg">
+                <h4>J&Jay Jeans</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$170.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg">
+                <h4>Puma Release Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$125.00</p>
+            </div>
+        </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-5.jpg">
+                <h4>Branded Shoes</h4>
+                <div class="rating">
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star-half' type='solid' ></box-icon>
+                </div>
+                <p>$100.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg">
+                <h4>Puma New T-Shirt</h4>
+                <div class="rating">
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star-half' type='solid' ></box-icon>
+                </div>
+
+                <p>$100.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg">
+                <h4>Access HRX Socks</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$100.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-8.jpg">
+                <h4> New Fossil G-Shock</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$100.00</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-9.jpg">
+                <h4>I-dye Watch</h4>
+                <div class="rating">
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star-half' type='solid' ></box-icon>
+                </div>
+                <p>$150.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg">
+                <h4>Black HRX Shoes </h4>
+                <div class="rating">
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star'></box-icon>
+                    <box-icon name='star-half' type='solid' ></box-icon>
+                </div>
+
+                <p>$200.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg">
+                <h4>Branded Shoe Gray</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$220.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg">
+                <h4>Flexiblee Jeans</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$130.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/exclusive.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively available on Accessian's Online Shop</p>
+                    <h1>Smart Band 4</h1>
+                    <small> The Mi Smart Band 4 features a 39.9% larger
+                    (than Mi Band 3) AMOLED color full-touch display
+                    with adjustable Brightness, so everything is clear as
+                    cam be.</small>
+                    <a href="" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-qoute-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sit nemo unde rerum officia aperiam tempore quod perspiciatis dolorem sunt odit quas eligendi,
+                    modi similique illum repellat quis suscipit ipsum?</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-1.png">
+                    <h3>Jovilyn Tim</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-qoute-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sit nemo unde rerum officia aperiam tempore quod perspiciatis dolorem sunt odit quas eligendi,
+                    modi similique illum repellat quis suscipit ipsum?</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-2.png">
+                    <h3>Jonathan Smith</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-qoute-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sit nemo unde rerum officia aperiam tempore quod perspiciatis dolorem sunt odit quas eligendi,
+                    modi similique illum repellat quis suscipit ipsum?</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-3.png">
+                    <h3>Michelle Cruz</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+    
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/play-store.png">
+                    <p>Our Purpose is to Sustainably make the pleasure and 
+                    benefits of online shopping that 
+                    is accessible to the many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Link</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Us</li>
+                        <li>Online Shop</li> 
+                    </ul>
+            </div>
+        </div>
+    </div>   
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
